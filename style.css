@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&family=Nunito:wght@200&display=swap');
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Josefin Slab', serif;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: whitesmoke 1px solid;
+    box-shadow: 0px 0px 30px 0px rgb(153, 152, 152);
+    background: linear-gradient(0deg,#080808,#026655 80%) no-repeat;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 50px;
+    width: 50px; 
+    margin-right: 15px;
+}
+
+.toggle_language {
+    padding: 2px;
+    background: #02665575;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.search {
+    padding: 20px;
+}
+
+input {
+    border-radius: 10px;
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: repeat(40% 40%);
+    gap: 3.5em;
+}
+
+article {
+    width: 300px;
+}
+
+h2 {
+   text-align: justify; 
+}
+
+article img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.content {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify; 
+}
+
+/* responsive for smaller screens________________________________________________________________________________*/
+@media screen and (max-width: 1440px) {
+    main {
+    width: 100%;
+    margin: 50px auto;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: repeat(40% 40%);
+    gap: 3.5em;
+}
+  }
+
+  /* responsive for smaller screens________________________________________________________________________________*/
+@media screen and (max-width: 968px) {
+     main {
+    width: 100%;
+    grid-template-columns: 40% 40% ;
+    grid-template-rows: repeat(40% 40%);
+    gap: 4em;
+}
+
+  }
+
+/* responsive for tablets________________________________________________________________________________*/
+@media screen and (max-width: 730px) {
+    h1 {
+        font-size: 1.1em;
+    }
+    
+    .logo {
+        height: 25px;
+        width: 25px; 
+        margin: auto 5px auto 15px;
+    }
+
+    input {
+        width: 120px;
+        font-size: 0.8em;
+    }
+
+    main {
+        gap: 3em;
+        font-size: 0.8em;
+    }
+
+    article {
+        width: 250px;
+    }
+    article img {
+        width: 250px;
+        height: 200px;
+    }
+  }
+
+  /* responsive for smartphones________________________________________________________________________________*/
+@media screen and (max-width: 600px) {
+    nav {
+        height: 50px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 1em;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .logo {
+        height: 30px;
+        width: 30px; 
+        margin: auto 5px auto 15px;
+    }
+    
+    .toggle_language {
+        padding: 2px;
+        font-size: 0.7em;
+    }
+    
+    .search {
+        padding: 5px;
+    }
+    
+    input {
+        width: 70px;
+        font-size: 0.7em;
+    }
+
+    main {
+        grid-template-columns: 70%;
+        font-size: 0.7em;
+    }
+
+    article {
+        width: 300px;
+    }
+ 
+    article img {
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+  /* responsive for smartphones________________________________________________________________________________*/
+  @media screen and (max-width:368px) {
+    h1 {
+        font-size: 0.7em;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .logo {
+        height: 25px;
+        width: 25px; 
+    }
+    
+    .toggle_language {
+        font-size: 0.7em;
+    }
+   
+    input {
+        width: 60px;
+        font-size: 0.7em;
+    }
+
+    article {
+        width: 250px;
+    }
+ 
+    article img {
+        width: 250px;
+        height: 150px;
+    }
+
+  }
+
+
