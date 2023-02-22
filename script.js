@@ -39,30 +39,30 @@ choiceCountry.addEventListener("change", function () {
 
 
 // SearchBar //
-// let searchInput = document.querySelector("input")
+let searchInput = document.querySelector("input")
 
-// function showInput() {
-//     searchInput.classList.toggle("active")
-//     searchInput.value = "";
-//     setTimeout(() => {
-//         filterInput();
-//     }, 400);
-// }
+function showInput() {
+    searchInput.classList.toggle("active")
+    searchInput.value = "";
+    setTimeout(() => {
+        filterInput();
+    }, 400);
+}
 
 
-// function filterInput() {
-//     let choice = document.querySelectorAll("articles");
-//     let filter = searchInput.value.toUpperCase();
-//     for (let i = 0; i < articles.length; i++) {
-//         if (articles[i].name.toUpperCase().indexOf(filter) > -1) {
-//             this.article[i].style.display = "";
-//             console.log("ok");
-//         }
-//         else {
-//             this.article[i].style.display = "none";
-//             console.log("no ref");
-//         }
-//     }
-// }
+function filterInput() {
+    let choice = document.querySelectorAll("articles");
+    let filter = searchInput.value.toUpperCase();
+    for (let i = 0; i < articles.length; i++) {
+        if (articles[i].name.toUpperCase().indexOf(filter) > -1) {
+            this.article[i].style.display = "";
+            console.log("ok");
+        }
+        else {
+            this.article[i].style.display = "none";
+            console.log("no ref");
+        }
+    }
+}
 
 ///////////////////////////////
