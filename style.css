@@ -22,11 +22,11 @@ nav {
     border-bottom: whitesmoke 1px solid;
     box-shadow: 0px 0px 30px 0px rgb(153, 152, 152);
     background: linear-gradient(0deg,#080808,#026655 80%) no-repeat;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding: 10px;
 }
 
-.title {
+nav .label {
     display: flex;
     flex-direction: row;
 }
@@ -41,15 +41,22 @@ nav {
     padding: 2px;
     background: #02665575;
     color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 3px;
+    margin: 5px;
 }
 
 .search {
-    padding: 20px;
+    padding: 15px;
 }
 
 input {
-    border-radius: 10px;
+    border-radius: 3px;
+    margin-right: 0px;
+}
+
+.searchbar_logo {
+    width: 10px;
+    height: 10px;
 }
 
 main {
@@ -59,28 +66,67 @@ main {
     justify-content: center;
     grid-template-columns: 25% 25% 25%;
     grid-template-rows: repeat(40% 40%);
-    gap: 3.5em;
+    gap: 4em;
+}
+
+.title {
+    
 }
 
 article {
     width: 300px;
 }
 
-h2 {
-   text-align: justify; 
-}
-
 article img {
     width: 300px;
     height: 200px;
     margin: 0 auto;
+    border-radius: 3px;
 }
 
 .content {
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
-    text-align: justify; 
+    
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0px;
+    background: linear-gradient(0deg,#080808,#026655,white  95%) no-repeat;
+    height: 130px;
+  }
+
+h6 {
+    color: whitesmoke;
+    border-left: 2px;
+}
+
+footer .label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+}
+
+footer a {
+    text-decoration: none;
+    color: transparent;
+}
+
+.social_media_logo {
+    height: 20px;
+    margin: 5px 12px;
+  }
 
 /* responsive for smaller screens________________________________________________________________________________*/
 @media screen and (max-width: 1440px) {
@@ -133,6 +179,29 @@ article img {
         width: 250px;
         height: 200px;
     }
+
+    footer {
+        height: 80px;
+      }
+    
+    h6 {
+        color: whitesmoke;
+        border-left: 2px;
+        font-size: 0.7em;
+        margin : 10px;
+    }
+    
+    footer .logo {
+        height: 20px;
+        width: 20px;
+        margin-right: 3px;
+    }
+    
+    .social_media_logo {
+        height: 15px;
+        margin: 5px 12px;
+      }
+
   }
 
   /* responsive for smartphones________________________________________________________________________________*/
@@ -186,7 +255,7 @@ article img {
 }
 
   /* responsive for smartphones________________________________________________________________________________*/
-  @media screen and (max-width:368px) {
+  @media screen and (max-width:375px) {
     h1 {
         font-size: 0.7em;
         text-align: left;
